@@ -1,5 +1,9 @@
-let userNames: string[];
-// let userNames: Array<string>;
-userNames = ["ashraful", "tahmina", "homayra", "Umama"];
+// let userNames: string[];
+let userNames: Array<string>;
+userNames = ["ashraful", "tahmina", "umama", "homayra"];
 
-console.log(userNames[0]);
+userNames.sort();
+console.log(userNames);
+
+let multipleArray: (string | number)[];
+multipleArray = [1, "ashraful"];
