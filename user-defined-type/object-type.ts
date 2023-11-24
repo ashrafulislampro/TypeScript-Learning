@@ -1,8 +1,15 @@
-let user0: object;
-user0 = { name: "ashraf" };
+let users: object[];
+users = [];
 
-console.log(user0);
+let user: { userName: string; userId?: number }; // ? mark means this property is optional
 
-let user1: { userName: string; userId: number };
+user = { userName: "ashraf", userId: 101 };
+users.push(user);
+let user1: { userName: string; userId?: number };
+user1 = { userName: "ashraful", userId: 102 };
+users.push(user1);
 
-user1 = { userName: "Ashraful", userId: 101 };
+for (const key in users) {
+  console.log(users[key]["userName"]);
+}
+// console.log(users);
