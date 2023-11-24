@@ -57,4 +57,4 @@ class UserAccount {
 }
 
 const user1: User = new UserAccount("Ashraful", 102);
-console.log(user1);
+// console.log(user1);
